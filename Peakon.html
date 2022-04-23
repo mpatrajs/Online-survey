@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -140,17 +141,20 @@ apskatīt visu kopā saņemto atbilžu analizētos rezultātus.</p>
                   <div class="col-xs-12">
                     <p class="page-header">Novērtējiet Peakon tīmekļa aptaujas dizainu (1 ir slikti, 10 ir labi):</p>
                     <div class="chart-scale">
-                      <button class="btn btn-scale btn-scale-desc-1">1</button>
-                      <button class="btn btn-scale btn-scale-desc-2">2</button>
-                      <button class="btn btn-scale btn-scale-desc-3">3</button>
-                      <button class="btn btn-scale btn-scale-desc-4">4</button>
-                      <button class="btn btn-scale btn-scale-desc-5">5</button>
-                      <button class="btn btn-scale btn-scale-desc-6">6</button>
-                      <button class="btn btn-scale btn-scale-desc-7">7</button>
-                      <button class="btn btn-scale btn-scale-desc-8">8</button>
-                      <button class="btn btn-scale btn-scale-desc-9">9</button>
-                      <button class="btn btn-scale btn-scale-desc-10">10</button>
-                      <hr/>             
+                      <input class="btn btn-scale btn-scale-desc-1" id="myButton1" type="button" value="1" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-2" id="myButton2" type="button" value="2" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-3" id="myButton3" type="button" value="3" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-4" id="myButton4" type="button" value="4" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-5" id="myButton5" type="button" value="5" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-6" id="myButton6" type="button" value="6" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-7" id="myButton7" type="button" value="7" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-8" id="myButton8" type="button" value="8" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-9" id="myButton9" type="button" value="9" onclick="change(value, 'myButton11')"></input>
+                      <input class="btn btn-scale btn-scale-desc-10" id="myButton10" type="button" value="10" onclick="change(value, 'myButton11')"></input>
+                      <hr/>   
+                      <p class="page-header">Jūsu vērtējums: 
+                        <input class="btn btn-scale btn-scale-desc-10" id="myButton11" type="button" value="" hidden></input>
+                      </p> 
                     </div>
                   </div>
                 </div>
@@ -164,17 +168,20 @@ apskatīt visu kopā saņemto atbilžu analizētos rezultātus.</p>
                   <div class="col-xs-12">
                     <p class="page-header">Novērtējiet cik jautājumi šķiet pamatoti un precizi? (1 ir slikti, 10 ir labi)</p>
                     <div class="chart-scale">
-                      <button class="btn btn-scale btn-scale-desc-1">1</button>
-                      <button class="btn btn-scale btn-scale-desc-2">2</button>
-                      <button class="btn btn-scale btn-scale-desc-3">3</button>
-                      <button class="btn btn-scale btn-scale-desc-4">4</button>
-                      <button class="btn btn-scale btn-scale-desc-5">5</button>
-                      <button class="btn btn-scale btn-scale-desc-6">6</button>
-                      <button class="btn btn-scale btn-scale-desc-7">7</button>
-                      <button class="btn btn-scale btn-scale-desc-8">8</button>
-                      <button class="btn btn-scale btn-scale-desc-9">9</button>
-                      <button class="btn btn-scale btn-scale-desc-10">10</button>
-                      <hr/>             
+                      <input class="btn btn-scale btn-scale-desc-1" id="myButton1" type="button" value="1" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-2" id="myButton2" type="button" value="2" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-3" id="myButton3" type="button" value="3" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-4" id="myButton4" type="button" value="4" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-5" id="myButton5" type="button" value="5" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-6" id="myButton6" type="button" value="6" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-7" id="myButton7" type="button" value="7" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-8" id="myButton8" type="button" value="8" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-9" id="myButton9" type="button" value="9" onclick="change(value, 'myButton12')"></input>
+                      <input class="btn btn-scale btn-scale-desc-10" id="myButton10" type="button" value="10" onclick="change(value, 'myButton12')"></input>
+                      <hr/>   
+                      <p class="page-header">Jūsu vērtējums: 
+                        <input class="btn btn-scale btn-scale-desc-10" id="myButton12" type="button" value="" hidden></input>
+                      </p> 
                     </div>
                   </div>
                 </div>
@@ -188,17 +195,20 @@ apskatīt visu kopā saņemto atbilžu analizētos rezultātus.</p>
                   <div class="col-xs-12">
                     <p class="page-header">Novērtējiet cik labi notiek datu analīze un datu rezultātu pārradīšana? (1 ir slikti, 10 ir labi)</p>
                     <div class="chart-scale">
-                      <button class="btn btn-scale btn-scale-desc-1">1</button>
-                      <button class="btn btn-scale btn-scale-desc-2">2</button>
-                      <button class="btn btn-scale btn-scale-desc-3">3</button>
-                      <button class="btn btn-scale btn-scale-desc-4">4</button>
-                      <button class="btn btn-scale btn-scale-desc-5">5</button>
-                      <button class="btn btn-scale btn-scale-desc-6">6</button>
-                      <button class="btn btn-scale btn-scale-desc-7">7</button>
-                      <button class="btn btn-scale btn-scale-desc-8">8</button>
-                      <button class="btn btn-scale btn-scale-desc-9">9</button>
-                      <button class="btn btn-scale btn-scale-desc-10">10</button>
-                      <hr/>             
+                      <input class="btn btn-scale btn-scale-desc-1" id="myButton1" type="button" value="1" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-2" id="myButton2" type="button" value="2" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-3" id="myButton3" type="button" value="3" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-4" id="myButton4" type="button" value="4" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-5" id="myButton5" type="button" value="5" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-6" id="myButton6" type="button" value="6" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-7" id="myButton7" type="button" value="7" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-8" id="myButton8" type="button" value="8" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-9" id="myButton9" type="button" value="9" onclick="change(value, 'myButton13')"></input>
+                      <input class="btn btn-scale btn-scale-desc-10" id="myButton10" type="button" value="10" onclick="change(value, 'myButton13')"></input>
+                      <hr/>   
+                      <p class="page-header">Jūsu vērtējums: 
+                        <input class="btn btn-scale btn-scale-desc-10" id="myButton13" type="button" value="" hidden></input>
+                      </p> 
                     </div>
                   </div>
                 </div>
@@ -207,7 +217,8 @@ apskatīt visu kopā saņemto atbilžu analizētos rezultātus.</p>
           </div>
         </div>
       </div>
-      <a href="#" class="u-btn u-button-style u-btn-1" onclick="location.href='SalesforceNPS.html'">Turpināt</a>
+      <script src="js/FileSaver.js"></script>
+      <input class="u-btn u-button-style u-btn-1"  id="myButton14" type="button" value="Turpināt" onclick="SaveToStorage('myButton11','myButton12', 'myButton13'); location.href='SalesforceNPS.html'" ></input>
     </section>
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-5933"><div class="u-clearfix u-sheet u-sheet-1">
